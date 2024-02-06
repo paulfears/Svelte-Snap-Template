@@ -25,7 +25,7 @@
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
     "serve": "mm-snap serve",
     "test": "echo 'TODO'",
-    "start": "mm-snap build && concurrently \"(mm-snap serve)\"  \"yarn --cwd ./site/ dev\""
+    "start": "mm-snap build && concurrently \"(mm-snap serve)\"  \"npx http-server\""
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
@@ -64,11 +64,9 @@
     "@metamask/snaps-cli": "^3.0.5",
     "@metamask/snaps-types": "^1.0.2",
     "@metamask/snaps-ui": "^2.0.0",
-    "@stellarguard/txrep": "^2.0.0",
     "buffer": "^6.0.3",
     "crc": "^4.3.2",
     "nacl": "^0.1.3",
-    "stellar-base": "10.0.0-beta.1",
     "tweetnacl": "^1.0.3",
     "uuid": "^9.0.0"
   }

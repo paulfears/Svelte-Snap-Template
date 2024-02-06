@@ -56,10 +56,11 @@
           params: {
             snapId: snapId,
             request: {
-              method: 'hello',
+              method: 'getAddress',
             },
           },
         });
+        console.log(result);
       } catch (err) {
         console.error(err)
         alert('Problem happened: ' + err.message || err)
